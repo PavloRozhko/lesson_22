@@ -1,0 +1,122 @@
+/* 
+to connect fonts at the end of the code add: &display=swap 
+font should be connected after reset.css and before styles
+*/
+@import "reset.css";
+/* ========================================================================== */
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	background-color: rgb(134, 101, 101);
+	color: #fff;
+}
+.wrapper>main {
+	flex-grow: 1;
+}
+[class*="__container"]{
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.title {
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+}
+section [class*="__title"]{
+	margin-bottom: 20px;
+}
+[class*="__text"] span {
+	text-decoration: underline;
+	color: #eee;
+}
+[class*="__text"] p:not(:last-child){
+	margin-bottom: 10px;
+}
+[class*="__content"] {
+	padding-bottom: 50px;
+}
+code {
+	background-color: #808080;
+	padding: 3px;
+	border-radius: 5px;
+	font-weight: 500;
+	color: #eee;
+}
+/* ========================================================================== */
+.header__container {}
+.page {}
+/* ========================================================================== */
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 0;
+	z-index: 50;
+	background-color: rgb(95, 64, 64);
+}
+.header__title {
+	font-size: 34px;
+	line-height: 1.2;
+	font-weight: 900;
+	text-align: center;
+}
+.syntax {
+	padding-top: 150px;
+}
+
+.syntax__container {
+}
+.syntax__title {
+}
+[class*="__image"] {
+	position: relative;
+	padding-bottom: 85%;
+	margin-bottom: 15px;
+}
+[class*="__image"] img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: left;
+}
+.syntax__image {
+}
+.syntax__text {
+}
+.variables {
+}
+.variables__content {
+}
+.variables__container {
+}
+.variables__title {
+}
+.variables__image {
+}
+.variables__text {
+}
+.data-types {
+}
+.data-types__content {
+}
+.data-types__container {
+}
+.data-types__title {
+}
+.data-types__image {
+}
+.data-types__text {
+}

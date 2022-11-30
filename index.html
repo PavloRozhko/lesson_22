@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 22</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">Урок 22 - JavaScript (частина 1).</h1>
+			</div>
+		</header>
+		<main class="page">
+			<section class="syntax">
+				<div class="syntax__content">
+					<div class="syntax__container">
+						<h2 class="syntax__title title">Синтаксис JavaScript.</h2>
+						<div class="syntax__image">
+							<img src="img/syntax.jpg" alt="image">
+						</div>
+						<div class="syntax__text">
+							<p>З наведених на зображенні варіантів помилку викличе код у варіантах № 3 та № 4.</p>
+							<p><span>У варіанті № 3</span> помилка відбудеться через те, що код написаний у рядок і при цьому не
+								розділений знаком ";".</p>
+							<p><span>У варіанті № 4</span> помилка відбудеться через не закриті лапки.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="variables">
+				<div class="variables__content">
+					<div class="variables__container">
+						<h2 class="variables__title title">Змінні в JavaScript.</h2>
+						<div class="variables__image">
+							<img src="img/variables.jpg" alt="image">
+						</div>
+						<div class="variables__text">
+							<p>З наведених на зображенні варіантів не вірно записаний код у варіантах №№ 1, 2 та 3.</p>
+							<p><span>У варіанті № 1</span> міститься помилка синтаксису. Код написаний у рядок і при цьому він не
+								розділений знаком ";". Таке написання коду викличе помилку.</p>
+							<p><span>У варіанті № 2</span> невірно написано ім'я змінної. При оголошенні змінної недотримано правила
+								присвоєння імені у стилі "lowerCamelCase". Правильним написанням імені має бути:
+								<code>"let myAge = 36;"</code>. При цьому, присвоєння імені змінної таким чином не викличе помилки.
+							</p>
+							<p><span>У варіанті № 3</span> невірно присвоєно ім'я константи. Стиль написання константи у верхньому
+								регістрі з розділенням слів нижнім підкресленням властивий константам, значення яких заздалегідь відоме,
+								а у варіанті, що розглядається розміри блоку є результатом обчислення. Тому, на мою думку, правильним
+								варіантом імені для константи було б: <code>"const blockSize = 14 + 15;"</code>.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="data-types">
+				<div class="data-types__content">
+					<div class="data-types__container">
+						<h2 class="data-types__title title">Типи даних в JavaScript.</h2>
+						<div class="data-types__image">
+							<img src="img/data-types.jpg" alt="image">
+						</div>
+						<div class="data-types__text">
+							<p>З наведених на зображенні варіантів не вірними є наступні: №№ 1, 2 та 3.</p>
+							<p><span>У варіанті № 1</span> змінна <code>userInfo</code> коректно прийме дані зі змінної
+								<code>userAge</code> тільки, якщо використати зворотні лапки замість звичайних. На мою думку, вірним
+								написанням коду має бути:
+								<code>let userInfo: `Фрилансер ${userAge}`;</code>
+							</p>
+							<p><span>У варіанті № 2</span> змінна <code>userHeight</code> після виконання операції ділення на 0
+								прийме значення Infinity, а не NaN. Значення NaN присвоюється змінній у тому випадку коли буде виконано
+								операції
+								множення, ділення або віднімання змінних, які містять різний тип даних, наприклад рядок з текстом і
+								число. Такого не відбудеться якщо буде виконуватись операція додавання. В такому випадку число буде
+								переведено у рядок і змінної буде тип даних String.</p>
+							<p><span>У варіанті № 3</span> зі змінної <code>userName</code> повернеться тип даних Undefuned, а не
+								Null, оскільки
+								оголошенні змінній без присвоєних даних
+								привласнюється саме такий тип даних.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
